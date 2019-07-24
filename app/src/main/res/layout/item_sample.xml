@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable type="assignment.demoapplication.com.mvvmarchitecture.sample.model.SampleData"
+                  name="data"/>
+    </data>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:tools="http://schemas.android.com/tools"
+                  android:orientation="horizontal"
+                  android:layout_margin="4dp"
+                  android:elevation="4dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+        <ImageView
+                android:id="@+id/imgCat"
+                android:src="@mipmap/ic_launcher"
+                android:scaleType="centerCrop"
+                android:layout_width="100dp"
+                android:contentDescription="@string/cat_breeds"
+                android:layout_height="100dp"/>
+
+        <TextView
+                android:id="@+id/txtCatName"
+                android:textSize="19sp"
+                tools:text="Sample Text For demo"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:elevation="2dp"
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:text="@{data.user}"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+</layout>
