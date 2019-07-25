@@ -144,14 +144,14 @@ This annotation provides a replacement of @Provides methods which simply return 
 
 **We have Six Modules in a base, which are mentioned below:**
 
-1. ActivityBindingModule
+1. **ActivityBindingModule**
     It will create sub-component of activity to fragment
     For reference you can read more 'https://medium.com/tompee/dagger-2-scopes-and-subcomponents-d54d58511781'
-2. ApplicationModule
+2. **ApplicationModule**
     Application module is nothing but it includes Network Module and ViewModel Module to enhance better abstraction.
-3. ContextModule
+3. **ContextModule**
     Context Module do work to provide application context without creating it again.
-4. FragmentBindingModule
+4. **FragmentBindingModule**
     FragmentBinding Modules create subcomponents of each and every fragments of the project, so we can have injection of Viewmodel Factories.
     So in this architecture we need to log each and every fragments here with below syntax:
     
@@ -159,7 +159,7 @@ This annotation provides a replacement of @Provides methods which simply return 
           @ContributesAndroidInjector
           abstract SampleFragment provideSampleFragment();
     ```
-5. NetworkModule 
+5. **NetworkModule** 
     1.It contains retrofit service providers with dependency of retrofit instance, which are injected at service layer.
     2.Benifit of this injection is to provide single instance of retrofit and APIinterface(Service) throught the application
 
@@ -171,7 +171,7 @@ This annotation provides a replacement of @Provides methods which simply return 
     }
 ````
 
-6. ViewModelModule
+6. **ViewModelModule**
     1. As we have inject constructors in our Viewmodel, so we need to map them with repository.
     2. It is mandatory to define each and every Viewmodel here as below snippet
     
