@@ -16,7 +16,7 @@
                 android:src="@mipmap/ic_launcher"
                 android:scaleType="centerCrop"
                 android:layout_width="100dp"
-                app:imageUrl="http://placekitten.com/200/200"
+                
                 android:contentDescription="@string/cat_breeds"
                 android:layout_height="100dp"/>
 
