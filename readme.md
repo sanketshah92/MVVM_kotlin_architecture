@@ -155,9 +155,10 @@ This annotation provides a replacement of @Provides methods which simply return 
     FragmentBinding Modules create subcomponents of each and every fragments of the project, so we can have injection of Viewmodel Factories.
     So in this architecture we need to log each and every fragments here with below syntax:
     
-    ``@ContributesAndroidInjector
+    ```
+          @ContributesAndroidInjector
           abstract SampleFragment provideSampleFragment();
-    ``
+    ```
 5. NetworkModule 
     1.It contains retrofit service providers with dependency of retrofit instance, which are injected at service layer.
     2.Benifit of this injection is to provide single instance of retrofit and APIinterface(Service) throught the application
@@ -173,8 +174,10 @@ This annotation provides a replacement of @Provides methods which simply return 
 6. ViewModelModule
     1. As we have inject constructors in our Viewmodel, so we need to map them with repository.
     2. It is mandatory to define each and every Viewmodel here as below snippet
-    ``   @Binds
+    
+    ```   
+          @Binds
           @IntoMap
           @ViewModelKey(SampleViewModel::class)
           abstract fun bindListViewModel(listViewModel: SampleViewModel): ViewModel
-    ``  
+    ```  
