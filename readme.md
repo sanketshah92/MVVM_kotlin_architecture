@@ -2,7 +2,7 @@
 ![alternativetext](/architecturediagram/MVVMArchitecure.jpg)
 
 
-# View
+## View
 1.  Purpose of the view to observe the proccessed data, which is exposed by corresponding Viewmodel
 2.  View should be injecting ViewmodelProvider Factory, to get instance of desired viewmodel
 3.  Your view is responsible for lifecycle ownership
@@ -57,7 +57,7 @@
         }
     }
 
-# View Model
+## View Model
 1. Viewmodels are created with Inject Constructors to provide dependencies and fullfil requirement of repository
 2. Viewmodel should expose the data observers, which will work as a live bridge between view and viewmodel
 3. Viewmodel should dispose the exposed observers whenever appropriate lifecycle owner goes remove from the memory.
@@ -83,11 +83,11 @@ open class SampleViewModel @Inject constructor(private val repository: SampleRep
 }
 ```
 
-# Model
+## Model
 1. Models are nothing but data containers, they are built as silly as possible because you need to treat it as a transportor. 
 2. Models are the container which transport the data between repository to viewmodel and viewmodel to view.
 
-# Repository
+## Repository
 1. Creational of repository should be derived from BaseRepository as we have injected our viewmodels with Factory and factory has dependency of BaseRepository to provide universal injection
 2. Our repository have capability to decide data flow, either data needed to be fetched from server or local database
 3. Most important part of repository is inject constructor, because we will be needing API Service, Database handlers to process further, currently we are supporting only Network calls. 
@@ -129,7 +129,7 @@ class SampleRepository @Inject constructor(val service: APIinterface) : BaseRepo
     }
 }
 ````
-# DI(Dependency Injection By Dagger2)
+## DI(Dependency Injection By Dagger2)
 **Basics Of Latest Dagger**
 -> @Binds
 This annotation provides a replacement of @Provides methods which simply return the injected parameter.
