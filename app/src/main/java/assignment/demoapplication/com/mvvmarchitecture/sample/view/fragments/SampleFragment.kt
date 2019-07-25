@@ -18,6 +18,7 @@ import javax.inject.Inject
 import androidx.databinding.BindingAdapter
 import android.widget.ImageView
 import androidx.lifecycle.ViewModelProvider
+import assignment.demoapplication.com.mvvmarchitecture.sample.view.adapters.SampleAdapter
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.bumptech.glide.request.RequestOptions
@@ -53,8 +54,12 @@ class SampleFragment : BaseFragment() {
         sampleViewModel.fetchSampleData()
         sampleViewModel.processedData.observe(
             this,
-            Observer { Log.e("Observed Result", ":" + it?.let { it -> it[0].getId() }) })
-
+            Observer {
+                binding!!.rvSample.apply {
+                    adapter = SampleAdapter(it)
+                }
+                Log.e("Observed Result", ":" + it?.let { it -> it[0].getId() })
+            })
     }
 
     override fun onDetach() {
