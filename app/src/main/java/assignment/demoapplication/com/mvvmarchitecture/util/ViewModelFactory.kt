@@ -3,9 +3,6 @@ package assignment.demoapplication.com.mvvmarchitecture.util
 import androidx.annotation.NonNull
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import assignment.demoapplication.com.mvvmarchitecture.base.BaseRepository
-import assignment.demoapplication.com.mvvmarchitecture.repository.SampleRepository
-import assignment.demoapplication.com.mvvmarchitecture.sample.viewmodel.SampleViewModel
 import javax.inject.Inject
 import javax.inject.Provider
 import javax.inject.Singleton
