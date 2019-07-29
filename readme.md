@@ -141,7 +141,7 @@ This annotation provides a replacement of @Provides methods which simply return 
 -> @ContributesAndroidInjector
     Dagger Android introduced an annotation which can reduce the Component Binds IntoSet Subcomponent ActivityKey FragmentKey etc. boilerplate for you.
     
-![alternativetext](/DaggerTree.png)
+![alternativetext](/DaggerTree2.png)
 
 **We have Six Modules in a base, which are mentioned below:**
 
