@@ -13,7 +13,4 @@ class BaseApplication : DaggerApplication() {
 
     }
 
-    override fun onCreate() {
-        super.onCreate()
-    }
 }

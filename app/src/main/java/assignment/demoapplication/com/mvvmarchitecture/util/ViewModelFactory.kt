@@ -1,6 +1,5 @@
 package assignment.demoapplication.com.mvvmarchitecture.util
 
-import androidx.annotation.NonNull
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import javax.inject.Inject

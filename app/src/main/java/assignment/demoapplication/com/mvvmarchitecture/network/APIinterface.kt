@@ -1,11 +1,13 @@
 package assignment.demoapplication.com.mvvmarchitecture.network
 
 import assignment.demoapplication.com.mvvmarchitecture.model.ResponseWrapper
-import assignment.demoapplication.com.mvvmarchitecture.sample.model.SampleData
 import assignment.demoapplication.com.mvvmarchitecture.util.Constants.Companion.GET_METHOD
 import assignment.demoapplication.com.mvvmarchitecture.util.Constants.Companion.POST_METHOD
 import io.reactivex.Observable
-import retrofit2.http.*
+import retrofit2.http.Body
+import retrofit2.http.GET
+import retrofit2.http.POST
+import retrofit2.http.Path
 
 interface APIinterface {
 

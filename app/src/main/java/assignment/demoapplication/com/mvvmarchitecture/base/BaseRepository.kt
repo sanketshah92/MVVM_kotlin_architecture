@@ -4,8 +4,6 @@ import assignment.demoapplication.com.mvvmarchitecture.network.APIinterface
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.Disposable
 import io.reactivex.schedulers.Schedulers
-import retrofit2.http.GET
-import retrofit2.http.POST
 import javax.inject.Inject
 
 open abstract class BaseRepository {

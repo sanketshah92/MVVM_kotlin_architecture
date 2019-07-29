@@ -1,27 +1,21 @@
 package assignment.demoapplication.com.mvvmarchitecture.sample.view.fragments
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
+import androidx.databinding.BindingAdapter
 import androidx.databinding.DataBindingUtil
-import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelProviders
 import assignment.demoapplication.com.mvvmarchitecture.R
 import assignment.demoapplication.com.mvvmarchitecture.base.BaseFragment
 import assignment.demoapplication.com.mvvmarchitecture.databinding.FragmentSampleBinding
 import assignment.demoapplication.com.mvvmarchitecture.sample.viewmodel.SampleViewModel
-import assignment.demoapplication.com.mvvmarchitecture.util.ViewModelFactory
-import javax.inject.Inject
-import androidx.databinding.BindingAdapter
-import android.widget.ImageView
-import androidx.lifecycle.ViewModelProvider
-import assignment.demoapplication.com.mvvmarchitecture.sample.view.adapters.SampleAdapter
 import com.bumptech.glide.Glide
-import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.bumptech.glide.request.RequestOptions
+import javax.inject.Inject
 
 
 class SampleFragment : BaseFragment() {

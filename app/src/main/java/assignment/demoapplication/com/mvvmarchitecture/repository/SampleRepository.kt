@@ -6,7 +6,6 @@ import assignment.demoapplication.com.mvvmarchitecture.CreateUser
 import assignment.demoapplication.com.mvvmarchitecture.base.BaseRepository
 import assignment.demoapplication.com.mvvmarchitecture.model.ResponseWrapper
 import assignment.demoapplication.com.mvvmarchitecture.network.APIinterface
-import assignment.demoapplication.com.mvvmarchitecture.sample.model.SampleData
 import assignment.demoapplication.com.mvvmarchitecture.util.Constants.Companion.POST_METHOD
 import javax.inject.Inject
 

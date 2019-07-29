@@ -1,14 +1,13 @@
 package assignment.demoapplication.com.mvvmarchitecture.sample.view.adapters
 
-import android.view.ViewGroup
-import androidx.recyclerview.widget.RecyclerView
-import assignment.demoapplication.com.mvvmarchitecture.databinding.ItemSampleBinding
-import assignment.demoapplication.com.mvvmarchitecture.sample.view.viewholders.SampleItemViewHolder
 import android.view.LayoutInflater
+import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
-import androidx.databinding.ViewDataBinding
+import androidx.recyclerview.widget.RecyclerView
 import assignment.demoapplication.com.mvvmarchitecture.R
+import assignment.demoapplication.com.mvvmarchitecture.databinding.ItemSampleBinding
 import assignment.demoapplication.com.mvvmarchitecture.sample.model.SampleData
+import assignment.demoapplication.com.mvvmarchitecture.sample.view.viewholders.SampleItemViewHolder
 
 
 class SampleAdapter constructor(private val data: List<SampleData>) : RecyclerView.Adapter<SampleItemViewHolder>() {

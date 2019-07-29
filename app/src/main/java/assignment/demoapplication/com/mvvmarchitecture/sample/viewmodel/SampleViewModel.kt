@@ -6,7 +6,6 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModel
 import assignment.demoapplication.com.mvvmarchitecture.model.ResponseWrapper
 import assignment.demoapplication.com.mvvmarchitecture.repository.SampleRepository
-import assignment.demoapplication.com.mvvmarchitecture.sample.model.SampleData
 import javax.inject.Inject
 
 open class SampleViewModel @Inject constructor(private val repository: SampleRepository) : ViewModel() {
@@ -18,7 +17,7 @@ open class SampleViewModel @Inject constructor(private val repository: SampleRep
 
     fun fetchSampleData() {
         repository.getCats(fetchedData)
-        observer = Observer<ResponseWrapper> { result ->
+        observer = Observer{ result ->
             Log.e("Sample Data Processing", "::->" + result)
             processedData.postValue(result)
         }

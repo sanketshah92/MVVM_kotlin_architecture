@@ -1,6 +1,5 @@
 package assignment.demoapplication.com.mvvmarchitecture.base
 
-import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -19,8 +18,7 @@ abstract class BaseFragment : dagger.android.support.DaggerFragment() {
         @NonNull inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(layoutRes(), container, false)
-        return view
+        return inflater.inflate(layoutRes(), container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {

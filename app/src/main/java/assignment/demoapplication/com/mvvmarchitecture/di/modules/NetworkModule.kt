@@ -21,7 +21,7 @@ class NetworkModule {
     @Singleton
     fun provideHttpClient(): OkHttpClient {
         val httpClient = OkHttpClient.Builder()
-        val logger:HttpLoggingInterceptor = HttpLoggingInterceptor()
+        val logger = HttpLoggingInterceptor()
         httpClient.addInterceptor(logger)
         httpClient.addInterceptor { chain ->
             val original = chain.request()
