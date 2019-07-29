@@ -52,14 +52,15 @@ class SampleFragment : BaseFragment() {
         super.onActivityCreated(savedInstanceState)
 
         sampleViewModel.fetchSampleData()
-        sampleViewModel.processedData.observe(
+        // Explanation of observing data from viewmodel
+        /*sampleViewModel.processedData.observe(
             this,
             Observer {
                 binding!!.rvSample.apply {
                     adapter = SampleAdapter(it)
                 }
                 Log.e("Observed Result", ":" + it?.let { it -> it[0].getId() })
-            })
+            })*/
     }
 
     override fun onDetach() {
